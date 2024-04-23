@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giá trị lớn nhất trong một dãy số</title>
+</head>
+<body>
+    <script>
+       let n;
+      function maxElement(n){
+          // gia dinh vi tri so lon nhat la so dau tien cua mang
+          let max = n[0];
+          let maxindex = 0;
+          // So sánh từng số trong mảng với giá trị đầu tiên để tìm ra giá trị lớn nhất
+
+          for(let i = 0 ; i<n.length; i++){
+              if(max < n[i]){
+              // Thay đổi giá trị lớn nhất nếu tìm ra số lớn hơn
+              max = n[i]
+              maxindex = i;
+            }
+          }
+           console.log("max:", max)
+           console.log("maxindex:", maxindex)
+      }
+      let num =[7, 5, 4, 9, 0, 18, 13]
+       maxElement(num); 
+    </script>
+</body>
+</html>
